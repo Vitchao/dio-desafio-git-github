@@ -1,0 +1,19 @@
+ssh-keygen -t ed25519 -c vsiqueiradesouza@gmail.com
+$ eval $(ssh-agent -s)
+
+-- CRIANDO UM COMMIT --
+1) Iniciando um código com o git --> No terminal digitar do Git Bash, digitar 'git init'
+obs: mostrando arquivos ocultos dentro de um repositório do git --> 'ls -a'
+
+2) O git pede um autor como padrão de configuração, para adicionar um autor é necessário dentro da pasta que deseja configurar 
+--> git config --global user.email "vsiqueiradesouza@gmail.com"
+--> git config --global user.name Victor
+
+3) Siga o próximo passo no terminal do Git Bash:
+--> git add *
+--> git commit -m "commit inicial" - o que esta em aspas pode ser substituido por outra informação 
+
+4) Fazendo o versionamento do seu código com GitHub no terminal do Git Bash:
+--> git remote add origin '..link do repositório do GitHub..'
+--> git remove -v - ver o estado do versionamento
+--> git push origin remote - literalmente empurra o arquivo para o repositório
